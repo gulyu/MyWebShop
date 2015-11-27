@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Kosár</title>
+</head>
+<body>
+    <div style="border:solid; width:500px;">
+        <h2>Kosár tartalma</h2>
+        <table>
+            <tr>
+                <th>
+                    Termék neve
+                </th>
+                <th>
+                    Ár
+                </th>
+            </tr>
+            <tr>
+                <td><%=objRep.productModel.name%></td>
+                <td><%=objRep.productModel.price%>Ft</td>
+            </tr>
+        </table>
+        <form action="Login">
+            <input type="submit" value="Megrendel">
+        </form>
+    </div>
+</body>
+</html>
+

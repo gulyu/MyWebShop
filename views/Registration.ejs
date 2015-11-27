@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regisztráció</title>
+    </head>
+    <body>
+        <div style="border:solid; width:500px;">
+            <h2>Adatok</h2>
+            <h3 style="padding-left:3px">Személyes adatok</h3>
+            <form method="post">
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbVezNev" name="tbVezNev" type="text" value='<%=objRep.userModel.firstName%>' />
+                    <input id="tbKerNev" name="tbKerNev" type="text" value=<%=objRep.userModel.lastName%> />
+                </div>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbIrSzam" name="tbIrSzam" type="text" value=<%=objRep.userModel.postCode%> />
+                    <input id="tbTelepules" name="tbTelepules" type="text" value=<%=objRep.userModel.city%> />
+                </div>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbCim" name="tbCim" size="45" type="text" value=<%=objRep.userModel.address%> />
+                </div>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbTelSzam" name="tbTelSzam" type="text" value=<%=objRep.userModel.phone%> />
+                    <input id="tbEmail" name="tbEmail" type="text" value=<%=objRep.userModel.email%> />
+                </div>
+                <h3 style="padding-left:3px">Szállítási adatok</h3>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbVezNev2" name="tbVezNev2" type="text" value=<%=objRep.userModel.deliverFirstName%> />
+                    <input id="tbKerNev2" name="tbKerNev2" type="text" value=<%=objRep.userModel.deliverLastName%> />
+                </div>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbIrSzam2" name="tbIrSzam2" type="text" value=<%=objRep.userModel.deliverPostCode%> />
+                    <input id="tbTelepules2" name="tbTelepules2" type="text" value=<%=objRep.userModel.deliverCity%> />
+                </div>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <input id="tbCim2" name="tbCim2" size="45" type="text" value=<%=objRep.userModel.deliverAddress%> />
+                </div>
+                <h3 style="padding-left:3px">Jelszó</h3>
+                <div style="width:500px; text-align:center; margin:3px">
+                    <div style="display:inline-block">
+                        <input id="tbJelszo" name="tbJelszo" type="text" value=<%=objRep.userModel.password%> />
+                        <input id="tbJelszoUjra" name="tbJelszoUjra" type="text" value=<%=objRep.userModel.password%> />
+                        <!--<input name="btnMentes" type="button" value="Mentés" />-->
+                    </div>
+                    <input type="submit" value="Mentés">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+

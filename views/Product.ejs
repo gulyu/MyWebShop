@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div style="border:1px solid black; width:900px; height:550px;">
+        <div style="display:inline-block; padding:10px;">
+            <div style="padding:5px; padding-bottom:120px">
+                <div>
+                    <input type="image" src="monitor.jpg" width="50" height="50" />
+                </div>
+            </div>
+            <h5>Termékek</h5>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Notebook</option>
+                    <option value="saab">Gép</option>
+                    <option value="mercedes">Hűtő</option>
+                    <option value="audi">Táska</option>
+                </select>
+            </div>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Asztali számítógép</option>
+                    <option value="saab">Asus</option>
+                    <option value="mercedes">Dell</option>
+                    <option value="audi">Fujitsu</option>
+                </select>
+            </div>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Számítógép komponensek</option>
+                    <option value="saab">Alaplap</option>
+                    <option value="mercedes">Processzor</option>
+                    <option value="audi">Videókártya</option>
+                </select>
+            </div>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Számítógép perifériák</option>
+                    <option value="saab">Billentyűzet</option>
+                    <option value="mercedes">Egér</option>
+                    <option value="audi">Hangfal</option>
+                </select>
+            </div>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Számítógép tartozékok</option>
+                    <option value="saab">Egérpad</option>
+                    <option value="mercedes">Pendrive</option>
+                    <option value="audi">Kábel</option>
+                </select>
+            </div>
+            <div style="padding:5px">
+                <select style="width:175px">
+                    <option value="volvo">Megjelenítők</option>
+                    <option value="saab">Samsung</option>
+                    <option value="mercedes">LG</option>
+                    <option value="audi">Asus</option>
+                </select>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:20px; display:inline-block">
+            <div>
+                <div style="display:inline-block;">
+                    <input type="text" value="Keresés" width="50" />
+                </div>
+                <div style="display:inline-block;">
+                    <div style="display:inline-block;">
+                        <!--<input type="button" value="Profil" />
+                        <input type="button" value="Kosár" />-->
+                        <form action="Registration" style="display:inline-block">
+                            <input type="submit" value="Profil">
+                        </form>
+                        <form action="Basket" style="display:inline-block">
+                            <input type="submit" value="Kosár">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top:20px">
+                <div style="border:1px solid black; width:600px; height:450px; display:inline-block">
+                    <div style="display:inline-block;">
+                        <div style="border:1px solid black; width:200px; height:400px; margin:20px;display:inline-block">
+                            <div>
+								<img width="70" height="70" src="monitor.jpg"/>
+							</div>
+                            <div>
+                                <a href="">Nagyítás</a>
+                            </div>
+                        </div>
+                        <div style="border:1px solid black; width:300px; height:400px; margin:20px;display:inline-block">
+                            <div style="display:inline-block">
+                                <%=objRep.productModel.name%>
+                            </div>
+                            <div style="display:inline-block">
+                                <!--<input type="button" value="Kosárba"/>-->
+                                <form action="Basket" style="display:inline-block">
+                                    <input type="submit" value="Kosárba">
+                                </form>
+                            </div>
+                            <div>
+                                <%=objRep.productModel.price%>Ft
+                            </div>
+                            <div style="border:1px solid black; width:250px; height:110px; margin:20px;">
+                                <%=objRep.productModel.description%>
+                            </div>
+                            <div style="border:1px solid black; width:250px; height:180px; margin:20px;">
+                                <%=objRep.productModel.spec%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

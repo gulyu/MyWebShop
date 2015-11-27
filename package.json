@@ -1,0 +1,15 @@
+{
+  "name": "mywebshop",
+  "version": "1.0.0",
+  "description": "asd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Herédi Péter",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.13.3"
+  }
+}
